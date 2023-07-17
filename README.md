@@ -2,7 +2,17 @@
 in development
 ## MODELS
 
-> ## Matchs
+> ## Sport
+>
+> name
+
+> ## Command
+>
+> kind_of_sport
+>
+> count_people
+
+> ## Match
 >
 > kind_of_sport
 >
@@ -13,3 +23,5 @@ in development
 > score_1
 >
 > score_2
+>
+> count_penalty
