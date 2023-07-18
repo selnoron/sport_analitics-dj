@@ -8,6 +8,8 @@ in development
 
 > ## Command
 >
+> name
+>
 > kind_of_sport
 >
 > count_people
