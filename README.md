@@ -6,6 +6,11 @@ in development
 >
 > name
 
+> ## Mathes
+> 
+> sport_type
+> video_file
+
 > ## Command
 >
 > name
@@ -14,7 +19,7 @@ in development
 >
 > count_people
 
-> ## Match
+> ## Games
 >
 > kind_of_sport
 >
