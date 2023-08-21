@@ -1,5 +1,5 @@
 """
-WSGI config for sportics project.
+WSGI config for sporti project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
