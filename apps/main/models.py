@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 
 class Sports(models.Model):
@@ -38,3 +39,24 @@ class Matches(models.Model):
         verbose_name = 'видео'
         verbose_name_plural = 'видео'
         ordering = ('sport_type',)
+
+
+class Favourite(models.Model):
+    user = models.ForeignKey(
+        verbose_name='кого',
+        to=User,
+        related_name='user_favourites',
+        on_delete=models.CASCADE
+    )
+
+    matches = models.ForeignKey(
+        verbose_name='какой матч',
+        to=Matches,
+        related_name='f_matches',
+        on_delete=models.CASCADE
+    )
+
+    class Meta:
+        ordering = ('-id',)
+        verbose_name = 'избранные'
+        verbose_name_plural = 'избранные'

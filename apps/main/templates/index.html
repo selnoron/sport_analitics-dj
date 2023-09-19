@@ -9,5 +9,8 @@
     {% for video in videos %}
     <video src="media/{{video.video_file}}" width="500px" height="300px" controls="controls"></video>
     {% endfor %}
+    {% for fvideo in f_videos %}
+    <video src="media/{{fvideo.matches.video_file}}" width="500px" height="300px" controls="controls"></video>
+    {% endfor %}
 </body>
 </html>

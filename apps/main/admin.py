@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Sports, Matches
+from .models import Sports, Matches, Favourite
 
 
 class SportsAdmin(admin.ModelAdmin):
@@ -18,5 +18,15 @@ class MatchesAdmin(admin.ModelAdmin):
         'sport_type',
     )
 
+class FavouritesAdmin(admin.ModelAdmin):
+    list_display:list[str] = (
+        'user',
+    )
+    list_filter: list[str] = (
+        'id',
+    )
+
+
 admin.site.register(Sports, SportsAdmin)
 admin.site.register(Matches, MatchesAdmin)
+admin.site.register(Favourite, FavouritesAdmin)
