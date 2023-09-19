@@ -11,6 +11,14 @@ in development
 > sport_type
 > 
 > video_file
+> 
+> ## Favourites
+> 
+> user
+> 
+> matches
+>
+> "and other"
 
 > ## Command
 >
